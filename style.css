@@ -1177,8 +1177,7 @@ footer {
   stroke-width: 3;
   stroke: var(--primary-green);
   stroke-miterlimit: 10;
-  box-shadow: inset 0px 0px 0px var(--primary-green);
-  animation: fillCheckmark .4s ease-in-out .4s forwards, scaleCheckmark .3s ease-in-out .9s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  animation: scaleCheckmark .3s ease-in-out .9s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
 .checkmark-circle {
@@ -1195,7 +1194,8 @@ footer {
   transform-origin: 50% 50%;
   stroke-dasharray: 48;
   stroke-dashoffset: 48;
-  stroke: var(--white);
+  stroke-width: 4;
+  stroke: var(--primary-green);
   animation: strokeCheck .3s cubic-bezier(0.16, 1, 0.3, 1) .8s forwards;
 }
 
@@ -1211,11 +1211,7 @@ footer {
   }
 }
 
-@keyframes fillCheckmark {
-  100% {
-    box-shadow: inset 0px 0px 0px 40px var(--primary-green);
-  }
-}
+
 
 @keyframes scaleCheckmark {
   0%, 100% {
