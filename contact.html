@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | 3 PILLARS Cleanliness & Facility Solutions</title>
+    <meta name="description" content="Get in touch with 3 PILLARS to request a customised cleanliness and waste management plan for your school, college, hotel, hostel, or commercial property.">
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <nav>
+                <div class="logo-container">
+                    <img src="assets/logo.jpeg" alt="3 PILLARS Logo">
+                    <span class="logo-text">3 <span>PILLARS</span></span>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="services.html">Current Services</a>
+                    <a href="contact.html" class="btn-nav nav-active">Contact Us</a>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="hero-tag"><i class="fas fa-envelope"></i> Get In Touch</div>
+            <h1>Contact Us</h1>
+            <p>Have questions or want to request a cleanliness service plan? Reach out to us today.</p>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info Card -->
+                <div class="contact-info-card">
+                    <div class="info-header">
+                        <h3>Let's Keep Your Property Clean</h3>
+                        <p>Get a customized hygiene and waste management plan designed specifically for your property or institution.</p>
+                    </div>
+                    <div class="info-details">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="info-text">
+                                <span>Email Us</span>
+                                <a href="mailto:3pillarsofficial@gmail.com">3pillarsofficial@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-phone"></i></div>
+                            <div class="info-text">
+                                <span>Call Us</span>
+                                <a href="tel:+917084656884">+91 70846 56884</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-location-dot"></i></div>
+                            <div class="info-text">
+                                <span>Address</span>
+                                <p>Near Vishnu Bhagwan Public School, Jhalwa, Prayagraj - 211012</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-socials">
+                        <span>Follow Us</span>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="contact-form-card">
+                    <form id="contactForm" method="POST">
+                        <input type="hidden" name="access_key" value="3f776809-631f-4993-81c4-c45a82517e6f">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" id="fullName" name="name" placeholder="Ranveer Singh" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="instName">Property / Institution Name</label>
+                                <input type="text" id="instName" name="institution" placeholder="e.g. School, Hotel, or Hostel Name" required>
+                            </div>
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="7084656884" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceType">Service Needed</label>
+                            <select id="serviceType" name="service" required>
+                                <option value="" disabled selected>Select a Service</option>
+                                <option value="Property & Campus Cleaning">Property &amp; Campus Cleaning</option>
+                                <option value="Room & Common Area Support">Room &amp; Common Area Support</option>
+                                <option value="Waste Collection Services">Waste Collection Services</option>
+                                <option value="Washroom Hygiene Maintenance">Washroom Hygiene Maintenance</option>
+                                <option value="Outdoor Area Cleaning">Outdoor Area Cleaning</option>
+                                <option value="Contractual Cleaning Workforce">Contractual Cleaning Workforce</option>
+                                <option value="IEC Campaigning & Awareness">IEC Campaigning &amp; Awareness</option>
+                                <option value="Other / Custom Inquiry">Other / Custom Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="How can we help you keep your property hygienic?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="successMessage" class="form-success-container" style="display: none;">
+                        <div class="success-icon-wrapper">
+                            <svg class="checkmark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                                <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                            </svg>
+                        </div>
+                        <h3>Message Sent!</h3>
+                        <p>Thank you for reaching out. We have received your request and will contact you shortly.</p>
+                        <button type="button" class="btn btn-primary btn-reset-form" id="btnResetForm">Send Another Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>3 PILLARS</h2>
+                    <p class="footer-tagline">"Cleaner Properties, Better Futures"</p>
+                    <p style="margin-top: 16px; font-size: 0.9rem;">Providing cleanliness and waste collection services for schools, colleges, hotels, hostels, and smart spaces.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Current Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:3pillarsofficial@gmail.com">3pillarsofficial@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+917084656884">+91 70846 56884</a></p>
+                    <p><i class="fas fa-location-dot"></i> Near Vishnu Bhagwan Public School, Jhalwa, Prayagraj - 211012</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 3 PILLARS. All rights reserved.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/917084656884?text=Hi%203%20PILLARS,%20I%20am%20interested%20in%20your%20services." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelector('header').classList.toggle('scrolled', window.scrollY > 50);
+        });
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.querySelector('.nav-links');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            navToggle.querySelector('i').className = navLinks.classList.contains('active') ? 'fas fa-xmark' : 'fas fa-bars';
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                navToggle.querySelector('i').className = 'fas fa-bars';
+            });
+        });
+
+        // Web3Forms
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(contactForm);
+            const json = JSON.stringify(Object.fromEntries(formData));
+            const btnSubmit = contactForm.querySelector('.btn-submit');
+            const originalBtnText = btnSubmit.innerHTML;
+            btnSubmit.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
+            btnSubmit.disabled = true;
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: json
+            }).then(async (response) => {
+                let resJson = await response.json();
+                if (response.status == 200) {
+                    contactForm.style.display = 'none';
+                    const successDiv = document.getElementById('successMessage');
+                    successDiv.style.display = 'flex';
+                    const svg = successDiv.querySelector('.checkmark-svg');
+                    svg.parentNode.replaceChild(svg.cloneNode(true), svg);
+                    contactForm.reset();
+                } else {
+                    alert(resJson.message || 'Something went wrong. Please try again.');
+                }
+            }).catch(() => {
+                alert('Something went wrong. Please check your network connection.');
+            }).then(() => {
+                btnSubmit.innerHTML = originalBtnText;
+                btnSubmit.disabled = false;
+            });
+        });
+        document.getElementById('btnResetForm').addEventListener('click', () => {
+            document.getElementById('successMessage').style.display = 'none';
+            contactForm.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
