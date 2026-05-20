@@ -14,22 +14,32 @@
 
     <!-- Header -->
     <header>
-        <div class="container nav-container">
+        <div class="nav-container">
             <nav>
-                <div class="logo-container">
+                <a href="index.html" class="logo-container">
                     <img src="assets/logo.jpeg" alt="3 PILLARS Logo">
                     <span class="logo-text">3 <span>PILLARS</span></span>
-                </div>
-                <div class="nav-links">
+                </a>
+                <div class="nav-pill">
                     <a href="index.html">Home</a>
                     <a href="about.html" class="nav-active">About Us</a>
-                    <a href="services.html">Current Services</a>
-                    <a href="contact.html" class="btn-nav">Contact Us</a>
+                    <a href="services.html">Services</a>
                 </div>
-                <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
+                <div class="nav-right">
+                    <a href="contact.html" class="btn-nav">Contact Us <i class="fas fa-arrow-right"></i></a>
+                    <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
             </nav>
+        </div>
+        <div class="nav-drawer" id="navDrawer">
+            <div class="nav-drawer-inner">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="nav-active">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html" class="btn-nav">Contact Us</a>
+            </div>
         </div>
     </header>
 
@@ -130,12 +140,344 @@
 
     <div class="section-divider"></div>
 
-    <!-- Footer -->
+    <!-- Meet the Team -->
+    <section class="team-section section">
+        <div class="container">
+            <div class="section-title">
+                <div class="hero-tag"><i class="fas fa-users"></i> Our Leadership</div>
+                <h2>Meet the Team Behind 3 PILLARS</h2>
+                <p>The passionate people driving cleaner, greener, and smarter facility management across properties.</p>
+            </div>
+
+        <!-- Team Marquee -->
+        <div class="marquee-wrapper team-marquee">
+            <div class="marquee-track">
+
+                <!-- ── Original set ── -->
+
+                <!-- Founder -->
+                <div class="team-card team-card--founder">
+                    <div class="team-card-top">
+                        <div class="team-avatar" style="--av-color: #15803d; --av-bg: rgba(21,128,61,0.12);">
+                            <span>JD</span>
+                        </div>
+                        <div class="team-badge founder-badge">
+                            <i class="fas fa-crown"></i> Founder & CEO
+                        </div>
+                    </div>
+                    <div class="team-card-body">
+                        <h3>John Doe</h3>
+                        <p class="team-role">Founder &amp; Chief Executive Officer</p>
+                        <p class="team-bio">Visionary behind 3 PILLARS with a passion for sustainable facility management. Leads strategic growth, client partnerships, and eco-conscious innovation.</p>
+                        <div class="team-tags"><span>Strategy</span><span>Leadership</span><span>Sustainability</span></div>
+                    </div>
+                    <div class="team-card-footer">
+                        <a href="mailto:3pillarsofficial@gmail.com" class="team-social" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="team-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/917084656884" class="team-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Operations Director -->
+                <div class="team-card">
+                    <div class="team-card-top">
+                        <div class="team-avatar" style="--av-color: #b45309; --av-bg: rgba(180,83,9,0.12);">
+                            <span>MR</span>
+                        </div>
+                        <div class="team-badge"><i class="fas fa-gears"></i> Operations</div>
+                    </div>
+                    <div class="team-card-body">
+                        <h3>Mark Roberts</h3>
+                        <p class="team-role">Director of Operations</p>
+                        <p class="team-bio">Oversees daily field operations, workforce scheduling, and quality audits across all property contracts. Ensures ISO-compliant hygiene standards every day.</p>
+                        <div class="team-tags"><span>Field Ops</span><span>Quality Control</span><span>Logistics</span></div>
+                    </div>
+                    <div class="team-card-footer">
+                        <a href="mailto:3pillarsofficial@gmail.com" class="team-social" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="team-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Field Lead -->
+                <div class="team-card">
+                    <div class="team-card-top">
+                        <div class="team-avatar" style="--av-color: #7c3aed; --av-bg: rgba(124,58,237,0.12);">
+                            <span>AL</span>
+                        </div>
+                        <div class="team-badge"><i class="fas fa-hard-hat"></i> Field Lead</div>
+                    </div>
+                    <div class="team-card-body">
+                        <h3>Alex Lee</h3>
+                        <p class="team-role">Head of Field Supervisors</p>
+                        <p class="team-bio">Leads and trains on-ground cleaning teams, performs property inspections, and handles real-time issue resolution. Backbone of day-to-day service excellence.</p>
+                        <div class="team-tags"><span>Training</span><span>Inspections</span><span>Team Lead</span></div>
+                    </div>
+                    <div class="team-card-footer">
+                        <a href="https://wa.me/917084656884" class="team-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="team-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Technical Head -->
+                <div class="team-card">
+                    <div class="team-card-top">
+                        <div class="team-avatar" style="--av-color: #0d9488; --av-bg: rgba(13,148,136,0.12);">
+                            <span>ST</span>
+                        </div>
+                        <div class="team-badge"><i class="fas fa-microchip"></i> Tech Head</div>
+                    </div>
+                    <div class="team-card-body">
+                        <h3>Sam Taylor</h3>
+                        <p class="team-role">Technical Head &amp; Digital Systems Lead</p>
+                        <p class="team-bio">Manages all digital tools, reporting systems, and tech infrastructure powering 3 PILLARS' smart operations. Drives data-driven, real-time property monitoring.</p>
+                        <div class="team-tags"><span>Systems</span><span>Automation</span><span>Analytics</span></div>
+                    </div>
+                    <div class="team-card-footer">
+                        <a href="mailto:3pillarsofficial@gmail.com" class="team-social" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="team-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="team-social" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- ── Duplicate set for seamless loop ── -->
+
+                <!-- Founder (dup) -->
+                <div class="team-card team-card--founder">
+                    <div class="team-card-top">
+                        <div class="team-avatar" style="--av-color: #15803d; --av-bg: rgba(21,128,61,0.12);">
+                            <span>JD</span>
+                        </div>
+                        <div class="team-badge founder-badge">
+                            <i class="fas fa-crown"></i> Founder & CEO
+                        </div>
+                    </div>
+                    <div class="team-card-body">
+                        <h3>John Doe</h3>
+                        <p class="team-role">Founder &amp; Chief Executive Officer</p>
+                        <p class="team-bio">Visionary behind 3 PILLARS with a passion for sustainable facility management. Leads strategic growth, client partnerships, and eco-conscious innovation.</p>
+                        <div class="team-tags"><span>Strategy</span><span>Leadership</span><span>Sustainability</span></div>
+                    </div>
+                    <div class="team-card-footer">
+                        <a href="mailto:3pillarsofficial@gmail.com" class="team-social" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="team-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/917084656884" class="team-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Operations Director (dup) -->
+                <div class="team-card">
+                    <div class="team-card-top">
+                        <div class="team-avatar" style="--av-color: #b45309; --av-bg: rgba(180,83,9,0.12);">
+                            <span>MR</span>
+                        </div>
+                        <div class="team-badge"><i class="fas fa-gears"></i> Operations</div>
+                    </div>
+                    <div class="team-card-body">
+                        <h3>Mark Roberts</h3>
+                        <p class="team-role">Director of Operations</p>
+                        <p class="team-bio">Oversees daily field operations, workforce scheduling, and quality audits across all property contracts. Ensures ISO-compliant hygiene standards every day.</p>
+                        <div class="team-tags"><span>Field Ops</span><span>Quality Control</span><span>Logistics</span></div>
+                    </div>
+                    <div class="team-card-footer">
+                        <a href="mailto:3pillarsofficial@gmail.com" class="team-social" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="team-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Field Lead (dup) -->
+                <div class="team-card">
+                    <div class="team-card-top">
+                        <div class="team-avatar" style="--av-color: #7c3aed; --av-bg: rgba(124,58,237,0.12);">
+                            <span>AL</span>
+                        </div>
+                        <div class="team-badge"><i class="fas fa-hard-hat"></i> Field Lead</div>
+                    </div>
+                    <div class="team-card-body">
+                        <h3>Alex Lee</h3>
+                        <p class="team-role">Head of Field Supervisors</p>
+                        <p class="team-bio">Leads and trains on-ground cleaning teams, performs property inspections, and handles real-time issue resolution. Backbone of day-to-day service excellence.</p>
+                        <div class="team-tags"><span>Training</span><span>Inspections</span><span>Team Lead</span></div>
+                    </div>
+                    <div class="team-card-footer">
+                        <a href="https://wa.me/917084656884" class="team-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="team-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Technical Head (dup) -->
+                <div class="team-card">
+                    <div class="team-card-top">
+                        <div class="team-avatar" style="--av-color: #0d9488; --av-bg: rgba(13,148,136,0.12);">
+                            <span>ST</span>
+                        </div>
+                        <div class="team-badge"><i class="fas fa-microchip"></i> Tech Head</div>
+                    </div>
+                    <div class="team-card-body">
+                        <h3>Sam Taylor</h3>
+                        <p class="team-role">Technical Head &amp; Digital Systems Lead</p>
+                        <p class="team-bio">Manages all digital tools, reporting systems, and tech infrastructure powering 3 PILLARS' smart operations. Drives data-driven, real-time property monitoring.</p>
+                        <div class="team-tags"><span>Systems</span><span>Automation</span><span>Analytics</span></div>
+                    </div>
+                    <div class="team-card-footer">
+                        <a href="mailto:3pillarsofficial@gmail.com" class="team-social" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="team-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="team-social" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+            </div><!-- /.marquee-track -->
+        </div><!-- /.marquee-wrapper -->
+
+
+    <div class="section-divider"></div>
+
+
+                    <div class="team-card-top">
+                        <div class="team-avatar" style="--av-color: #15803d; --av-bg: rgba(21,128,61,0.12);">
+                            <span>JD</span>
+                        </div>
+                        <div class="team-badge founder-badge">
+                            <i class="fas fa-crown"></i> Founder & CEO
+                        </div>
+                    </div>
+                    <div class="team-card-body">
+                        <h3>John Doe</h3>
+                        <p class="team-role">Founder &amp; Chief Executive Officer</p>
+                        <p class="team-bio">Visionary behind 3 PILLARS with a passion for sustainable facility management. Leads strategic growth, client partnerships, and eco-conscious innovation across all operations.</p>
+                        <div class="team-tags">
+                            <span>Strategy</span>
+                            <span>Leadership</span>
+                            <span>Sustainability</span>
+                        </div>
+                    </div>
+                    <div class="team-card-footer">
+                        <a href="mailto:3pillarsofficial@gmail.com" class="team-social" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="team-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/917084656884" class="team-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Co-Founder -->
+                <div class="team-card">
+                    <div class="team-card-top">
+                        <div class="team-avatar" style="--av-color: #0369a1; --av-bg: rgba(3,105,161,0.12);">
+                            <span>JS</span>
+                        </div>
+                        <div class="team-badge">
+                            <i class="fas fa-handshake"></i> Co-Founder
+                        </div>
+                    </div>
+                    <div class="team-card-body">
+                        <h3>Jane Smith</h3>
+                        <p class="team-role">Co-Founder &amp; Director of Client Relations</p>
+                        <p class="team-bio">Drives client onboarding, contract management, and long-term partnerships with schools, hotels, and institutions. Ensures every client receives a tailored service experience.</p>
+                        <div class="team-tags">
+                            <span>Client Relations</span>
+                            <span>Contracts</span>
+                            <span>Growth</span>
+                        </div>
+                    </div>
+                    <div class="team-card-footer">
+                        <a href="mailto:3pillarsofficial@gmail.com" class="team-social" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="team-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Operations Director -->
+                <div class="team-card">
+                    <div class="team-card-top">
+                        <div class="team-avatar" style="--av-color: #b45309; --av-bg: rgba(180,83,9,0.12);">
+                            <span>MR</span>
+                        </div>
+                        <div class="team-badge">
+                            <i class="fas fa-gears"></i> Operations
+                        </div>
+                    </div>
+                    <div class="team-card-body">
+                        <h3>Mark Roberts</h3>
+                        <p class="team-role">Director of Operations</p>
+                        <p class="team-bio">Oversees daily field operations, workforce scheduling, and quality audits across all property contracts. Ensures ISO-compliant hygiene standards are met every single day.</p>
+                        <div class="team-tags">
+                            <span>Field Ops</span>
+                            <span>Quality Control</span>
+                            <span>Logistics</span>
+                        </div>
+                    </div>
+                    <div class="team-card-footer">
+                        <a href="mailto:3pillarsofficial@gmail.com" class="team-social" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="team-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Field Supervisor Lead -->
+                <div class="team-card">
+                    <div class="team-card-top">
+                        <div class="team-avatar" style="--av-color: #7c3aed; --av-bg: rgba(124,58,237,0.12);">
+                            <span>AL</span>
+                        </div>
+                        <div class="team-badge">
+                            <i class="fas fa-hard-hat"></i> Field Lead
+                        </div>
+                    </div>
+                    <div class="team-card-body">
+                        <h3>Alex Lee</h3>
+                        <p class="team-role">Head of Field Supervisors</p>
+                        <p class="team-bio">Leads and trains on-ground cleaning teams, performs property inspections, and handles real-time issue resolution. The backbone of day-to-day service excellence.</p>
+                        <div class="team-tags">
+                            <span>Training</span>
+                            <span>Inspections</span>
+                            <span>Team Lead</span>
+                        </div>
+                    </div>
+                    <div class="team-card-footer">
+                        <a href="https://wa.me/917084656884" class="team-social" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="team-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+
+                <!-- Technical Head -->
+                <div class="team-card">
+                    <div class="team-card-top">
+                        <div class="team-avatar" style="--av-color: #0d9488; --av-bg: rgba(13,148,136,0.12);">
+                            <span>ST</span>
+                        </div>
+                        <div class="team-badge">
+                            <i class="fas fa-microchip"></i> Tech Head
+                        </div>
+                    </div>
+                    <div class="team-card-body">
+                        <h3>Sam Taylor</h3>
+                        <p class="team-role">Technical Head &amp; Digital Systems Lead</p>
+                        <p class="team-bio">Manages all digital tools, reporting systems, and tech infrastructure powering 3 PILLARS' smart operations. Drives data-driven decisions and real-time property monitoring solutions.</p>
+                        <div class="team-tags">
+                            <span>Systems</span>
+                            <span>Automation</span>
+                            <span>Analytics</span>
+                        </div>
+                    </div>
+                    <div class="team-card-footer">
+                        <a href="mailto:3pillarsofficial@gmail.com" class="team-social" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="team-social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="team-social" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+            </div><!-- /.team-grid -->
+
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
     <footer>
         <div class="container">
             <div class="footer-top">
                 <div class="footer-brand">
-                    <h2>3 PILLARS</h2>
+                    <div class="footer-logo">
+                        <img src="assets/logo.jpeg" alt="3 PILLARS Logo">
+                        <span class="footer-logo-text">3 <span>PILLARS</span></span>
+                    </div>
                     <p class="footer-tagline">"Cleaner Properties, Better Futures"</p>
                     <p style="margin-top: 16px; font-size: 0.9rem;">Providing cleanliness and waste collection services for schools, colleges, hotels, hostels, and smart spaces.</p>
                 </div>
@@ -178,15 +520,15 @@
             document.querySelector('header').classList.toggle('scrolled', window.scrollY > 50);
         });
         const navToggle = document.getElementById('navToggle');
-        const navLinks = document.querySelector('.nav-links');
+        const navDrawer = document.getElementById('navDrawer');
         navToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            navToggle.querySelector('i').className = navLinks.classList.contains('active') ? 'fas fa-xmark' : 'fas fa-bars';
+            navDrawer.classList.toggle('active');
+            navToggle.classList.toggle('open');
         });
-        document.querySelectorAll('.nav-links a').forEach(link => {
+        document.querySelectorAll('.nav-drawer-inner a').forEach(link => {
             link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                navToggle.querySelector('i').className = 'fas fa-bars';
+                navDrawer.classList.remove('active');
+                navToggle.classList.remove('open');
             });
         });
     </script>

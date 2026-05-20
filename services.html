@@ -14,24 +14,35 @@
 
     <!-- Header -->
     <header>
-        <div class="container nav-container">
+        <div class="nav-container">
             <nav>
-                <div class="logo-container">
+                <a href="index.html" class="logo-container">
                     <img src="assets/logo.jpeg" alt="3 PILLARS Logo">
                     <span class="logo-text">3 <span>PILLARS</span></span>
-                </div>
-                <div class="nav-links">
+                </a>
+                <div class="nav-pill">
                     <a href="index.html">Home</a>
                     <a href="about.html">About Us</a>
-                    <a href="services.html" class="nav-active">Current Services</a>
-                    <a href="contact.html" class="btn-nav">Contact Us</a>
+                    <a href="services.html" class="nav-active">Services</a>
                 </div>
-                <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
+                <div class="nav-right">
+                    <a href="contact.html" class="btn-nav">Contact Us <i class="fas fa-arrow-right"></i></a>
+                    <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
             </nav>
         </div>
+        <div class="nav-drawer" id="navDrawer">
+            <div class="nav-drawer-inner">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html" class="nav-active">Services</a>
+                <a href="contact.html" class="btn-nav">Contact Us</a>
+            </div>
+        </div>
     </header>
+
 
     <!-- Page Banner -->
     <section class="page-banner">
@@ -257,7 +268,10 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-brand">
-                    <h2>3 PILLARS</h2>
+                    <div class="footer-logo">
+                        <img src="assets/logo.jpeg" alt="3 PILLARS Logo">
+                        <span class="footer-logo-text">3 <span>PILLARS</span></span>
+                    </div>
                     <p class="footer-tagline">"Cleaner Properties, Better Futures"</p>
                     <p style="margin-top: 16px; font-size: 0.9rem;">Providing cleanliness and waste collection services for schools, colleges, hotels, hostels, and smart spaces.</p>
                 </div>
