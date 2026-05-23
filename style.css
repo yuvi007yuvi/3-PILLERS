@@ -630,39 +630,39 @@ nav {
   100% { transform: translate(30px, 20px) scale(1.1); }
 }
 
-/* Split container — full viewport width, no padding */
+/* Hero container — stacked: text top, full-width image below */
 .hero-split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   position: relative;
   z-index: 2;
 }
 
-/* Left: content panel */
+/* Top: content panel */
 .hero-split-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 120px 64px 80px 7vw;
+  align-items: flex-start;
+  padding: 120px 7vw 60px;
   position: relative;
   z-index: 3;
+  max-width: 900px;
 }
 
-/* Right: full-bleed image panel */
+/* Bottom: full-width image panel */
 .hero-split-image {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  background: #f8faf9;
+  width: 100%;
+  display: block;
+  background: transparent;
 }
 
 .hero-split-image img {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: contain;
 }
 
 /* Left-edge gradient — disabled, image shown fully */
@@ -773,14 +773,14 @@ nav {
 /* Responsive: Stack on tablet/mobile */
 @media (max-width: 1024px) {
   .hero-split {
-    grid-template-columns: 1fr;
     min-height: auto;
   }
 
   .hero-split-content {
-    padding: 120px 32px 60px;
+    padding: 120px 32px 50px;
     text-align: center;
     align-items: center;
+    max-width: 100%;
   }
 
   .hero-subtitle {
@@ -790,37 +790,11 @@ nav {
   .hero-trust {
     justify-content: center;
   }
-
-  .hero-split-image {
-    height: 55vw;
-    min-height: 320px;
-    max-height: 500px;
-  }
-
-  .hero-image-overlay {
-    background: linear-gradient(
-      to bottom,
-      #f8faf9 0%,
-      rgba(248, 250, 249, 0.2) 20%,
-      transparent 60%
-    );
-  }
-
-  .hero-badge {
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
 
 @media (max-width: 600px) {
   .hero-split-content {
-    padding: 100px 24px 48px;
-  }
-
-  .hero-badge {
-    font-size: 0.78rem;
-    padding: 8px 16px;
+    padding: 90px 20px 40px;
   }
 }
 
